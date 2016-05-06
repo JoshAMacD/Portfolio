@@ -1,0 +1,104 @@
+@import "lemonade"
+@import "1-base/vars"
+.mobile-nav
+  .top-animate
+      background: $green !important
+      top: 13px !important
+      -webkit-transform: rotate(45deg)
+      transform: rotate(45deg)
+
+  .mid-animate
+      opacity: 0
+
+  .bottom-animate
+      background: $green !important
+      top: 13px !important
+      -webkit-transform: rotate(-225deg)
+      transform: rotate(-225deg)
+
+  .top-menu
+      top: 5px
+      width: 25px
+      height: 2px
+      border-radius: 10px
+      background-color: $purple
+
+  .mid-menu
+      top: 13px
+      width: 25px
+      height: 2px
+      border-radius: 10px
+      background-color: $purple
+
+  .bottom-menu
+      top: 21px
+      width: 25px
+      height: 2px
+      border-radius: 10px
+      background-color: $purple
+
+  .menui
+      background: $purple
+      transition: 0.6s ease
+      transition-timing-function: cubic-bezier(.75, 0, .29, 1.01)
+      margin-top: 10px
+      position: absolute
+
+
+  .icon
+      z-index: 999
+      position: absolute
+      display: block
+      padding: 9px
+      height: 32px
+      width: 32px
+      margin-top: 4.2em
+      margin-right: 8%
+      right: 0
+
+
+  .mobilenav
+      font-family: lust
+      top: 0
+      left: 0
+      z-index: 999
+      display: none
+      position: fixed
+      width: 100%
+      height: 100%
+      background: rgba(0, 0, 0, 0.9)
+
+  .mobilenav li
+      list-style-type: none
+      text-align: center
+      padding: 10px
+
+  .mobilenav li a
+      font-size: 125%
+      color: $purple
+      text-decoration: none
+      font-weight: 100
+      width: 100%
+  .mobilenav li a:hover
+      color: $green
+
+  .mobilenav li:first-child
+      margin-top: 125px
+
+  .mobilenav li a:active
+      color: $green
+
+  h2
+    color: #fff
+    text-align: center
+    padding-top: 1.8em
+    padding-bottom: 0.6em
+    font-weight: 100
+
+@media (min-width: $large)
+  .mobile-nav
+    display: none
+
+@media (max-width: $medium)
+  .mobile-nav
+    display: block

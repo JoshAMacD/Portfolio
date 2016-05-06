@@ -1,0 +1,82 @@
+@import "1-base/vars"
+
+.about
+  margin-top: 3em
+  margin-bottom: 5em
+
+  #title
+    font-family: $font-family-display
+    font-size: 1.6em
+    font-weight: 100
+    color: $green
+    padding-bottom: 1em
+
+  #sub-title
+    font-family: $font-family-text
+    font-size: 1.3em
+    font-weight: 100
+    color: $purple
+    margin-top: 1em
+    padding-bottom: 1em
+
+  p
+    font-family: $font-family-text
+    font-size: 1em
+    font-weight: 100
+    color: $dark-grey
+    line-height: 25px
+
+  .profile-pic
+    width: 400px
+    height: auto
+    display: block
+    margin: 0 auto
+
+  .about-text
+    padding-left: 1em
+
+  .about-work
+    padding-left: 1em
+    margin-top: 2em
+
+  .about-icons-group
+    width: 50%
+    margin-top: 4em
+
+  .about-icons, ul
+    list-style: none
+
+  .about-icons
+    width: 80px
+    display: block
+    margin: 6em auto 0 auto
+
+@media (max-width: $large)
+  .about
+    margin-top: 1em
+
+  #title
+    text-align: center
+    margin-top: 2em
+
+  .profile
+    width: 100%
+
+  .profile-pic, .about-text, .about-work
+    margin-left: 0
+
+  .about-icons-group
+    display: none
+
+  .about-work
+    margin-top: 1em
+
+@media (max-width: $small)
+  .about
+    margin-top: 1em
+
+    .profile
+      width: 100%
+
+    .profile-pic
+      width: 340px

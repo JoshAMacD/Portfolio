@@ -1,0 +1,85 @@
+@import "1-base/vars"
+
+.project-page
+
+  .proj-nav
+    margin-top: 3em
+
+    .proj-nav-text
+      font-family: $font-family-text
+      color: $dark-grey
+      font-weight: 100
+      font-size: 1.2em
+      margin-top: -1.25em
+      margin-left: 2em
+
+    #back-arrow
+      width: 25px
+
+  .heading
+    font-family: $font-family-display
+    color: $dark-grey
+    font-weight: 100
+    font-size: 2em
+    margin-top: 1em
+    text-align: center
+
+  .sub-heading
+    font-family: $font-family-display
+    color: $dark-grey
+    font-weight: 100
+    font-size: 1.4em
+    margin-top: 2em
+    text-align: center
+
+  #proj-foot-logo
+    width: 80px
+    display: block
+    margin: 4em auto 0 auto
+
+  .foot
+    font-family: $font-family-text
+    color: $dark-grey
+    font-weight: 100
+    font-size: 0.8em
+    text-align: center
+    margin: 1em 0 3em 0
+
+  #prey-icon
+    width: 110px
+    display: block
+    margin: 3em auto 0 auto
+
+  .text-block
+    +clearfix
+
+  .proj-main-text
+    width: 840px
+    text-align: center
+    margin: 0 auto 0 auto
+
+  .proj-main-text, .proj-text
+    font-family: $font-family-text
+    color: $dark-grey
+    font-weight: 100
+    font-size: 1em
+    padding: 10px
+
+  .proj-text
+    margin: 1em auto 0 auto
+
+  .proj-img
+    padding: 10px
+    margin: 2em auto 0 auto
+
+  #break
+    margin-bottom: 1em
+    width: 100%
+
+  #text-break
+    margin-bottom: 1em
+    width: 50%
+
+  @media (max-width: $large)
+    .proj-main-text
+      width: auto
